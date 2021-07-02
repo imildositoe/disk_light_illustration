@@ -1,0 +1,91 @@
+<!-- Perfect Disk -->
+<!-- Copyright Imildo Sitoe -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disk</title>
+
+    <style>
+        #caixa {
+            width: 100%;
+            height: 750px;
+            /*margin: -10% -10% -10% -10%;*/
+            background-color: #ff2d91;
+        }
+
+        /*.box-one {
+            width: 5%;
+            height: 10px;
+            background-color: #ff2d91;
+        }*/
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+    <body>
+        <div id="caixa" class="box">
+            <!-- <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div> -->
+        </div>
+
+        <script>
+            var caixa = document.getElementById('caixa');
+
+            function getColor() {
+                return 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255)+')';
+            }
+
+            function changeColor() {
+                caixa.style.backgroundColor = getColor();
+            }
+
+            (function () {
+                setInterval(changeColor, 10);
+            })();
+
+            // ---------------------------------------------- //
+
+            // var box = [];
+            // box = document.getElementsByClassName('box-one');
+
+            caixa.style.display = 'flex';
+            caixa.style.flexWrap = 'wrap';
+
+            let boxOne = document.createElement('div');
+            boxOne.style.width = '5%';
+            boxOne.style.height = '10px';
+            boxOne.style.backgroundColor = 'white';
+
+            function changeColorBox() {
+                var a = caixa;
+                for (var i = 0; i < 10; i++) {
+                    boxOne.style.backgroundColor = getColor();
+                    // caixa.appendChild(boxOne);
+                    a.appendChild(boxOne);
+                    a=boxOne;
+                }
+            }
+
+            (function () {
+                setInterval(changeColorBox, 50);
+            })();
+
+        </script>
+
+    </body>
+</html>
