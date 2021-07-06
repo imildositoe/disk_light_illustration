@@ -60,8 +60,8 @@
 
             // ---------------------------------------------- //
 
-            // var box = [];
-            // box = document.getElementsByClassName('box-one');
+            var box = [];
+            box = document.getElementsByClassName('box-one');
 
             caixa.style.display = 'flex';
             caixa.style.flexWrap = 'wrap';
@@ -75,7 +75,7 @@
                 var a = caixa;
                 for (var i = 0; i < 10; i++) {
                     boxOne.style.backgroundColor = getColor();
-                    // caixa.appendChild(boxOne);
+                    caixa.appendChild(boxOne);
                     a.appendChild(boxOne);
                     a=boxOne;
                 }
