@@ -1,3 +1,6 @@
+/**
+ * @author poisonshade
+ * */
 
 let caixa = document.getElementById('caixa');
 
