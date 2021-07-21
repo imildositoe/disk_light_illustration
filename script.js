@@ -25,3 +25,10 @@ function getBox() {
     return div;
 }
 
+function randomizeBoxes() {
+    for (let i = 0; i < 500; i++) {
+        //currentPosition receives current X and Y
+        let currentPosition = (Math.random() * 1080) + 'x' + (Math.random() * 1080);
+        getBox().style.position = currentPosition;
+    }
+}
