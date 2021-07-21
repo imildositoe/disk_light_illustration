@@ -21,8 +21,7 @@ function getBox() {
     div.style.width = '2%';
     div.style.height = '2%';
     div.style.boxShadow = '3px 3px 3px rgba(0, 0, 0, 1)';
+    div.style.backgroundColor = getColor();
+    return div;
 }
 
-function randomizeBoxes() {
-
-}
