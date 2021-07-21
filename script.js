@@ -16,9 +16,13 @@ function changeColor() {
     setInterval(changeColor, 10);
 })();
 
-function createBox() {
+function getBox() {
     let div = document.createElement('div');
     div.style.width = '2%';
     div.style.height = '2%';
     div.style.boxShadow = '3px 3px 3px rgba(0, 0, 0, 1)';
+}
+
+function randomizeBoxes() {
+
 }
